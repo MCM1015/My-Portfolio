@@ -8,56 +8,85 @@
 </head>
 
 <body>
+    <header>
+        <h1>Mary McClernan</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#Work">Work</a>
+                </li>
+                <li>
+                    <a href="#Contact-me">Contact me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <header>
-            <h1>Mary McClernan</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#Work">Work</a>
-                    </li>
-                    <li>
-                        <a href="#Contact-me">Contact me</a>
-                    </li>
-                </ul>
-            </nav>
+        <section class="subheader">
             <img src="assets/images/Selfie.jpeg" alt="Picture of me" class=Selfie></img>
-            <p class="subtitle">"Know better, do better" - Maya Angelou</p>
-        </header>
+            <p>"Know better, do better" - Maya Angelou</p>
+        </section>
 
         <section id="about-me" alt="about me" class="section">
-            <h2 class="header">About Me</h2>
-            <article>
-                <p>Born and raised in Maryland. I am currently training to become a full stack develop through a bootcamp provided by Johns Hopkins University. 
-                    My hope is to become proficient in both front and back end web development. Some examples of my work thus far can be seen below.
+            <div class="header-container">
+                <h2>About Me</h2>
+            </div>
+            <article class="me">
+                <p>Born and stayed in Maryland. I am currently training to become a full stack develop through a
+                    bootcamp provided by Johns Hopkins University.
+                    My hope is to become proficient in both front and back end web development. Some examples of my work
+                    thus far can be seen below.
                     My work not only highlights who I am as a person but more importantly who I am as a developer.
                 </p>
             </article>
         </section>
 
         <section id="Work" alt="Work" class="section">
-            <h2 class="header">Work</h2>
-            <figure class="project" id="fanpage">
-                <a href="https://mcm1015.github.io/fanpage.21pilots/" target="_blank">21 Pilots Fanpage</a>
-            </figure>
-            <figure class="project" id="scratch">
-                <a href="https://scratch.mit.edu/projects/484767711/" target="_blank"> Scratch Game</a>
-            </figure>
-            <figure class="project" id="more">
-                <p>More projects to come</p>
-            </figure>
+            <div class="header-container">
+                <h2>Work</h2>
+            </div>
+            <article class="project">
+                <figure class="fanpage">
+                    <a href="https://mcm1015.github.io/fanpage.21pilots/" target="_blank">
+                        <img class="fanpage-image" src="assets/images/Twenty one pilots.jpg">
+                        <div class="image">
+                            <p>21 Pilots Fanpage</p>
+                        </div>
+                    </a>
+                </figure>
+                <article class="two">
+                    <figure class="scratch">
+                        <a href="https://scratch.mit.edu/projects/484767711/" target="_blank">
+                            <img class="scratch-image" src="assets/images/Scratch.jpg" alt="Game">
+                            <div class="image">
+                                <p>Game</p>
+                            </div>
+                        </a>
+                    </figure>
+                    <figure class="blank">
+                        <a href="#" target="_blank">
+                            <img class="blank-image" src="assets/images/blankbackground.jfif" alt="Blank Background">
+                            <div class="image">
+                                <p>More Projects to come</p>
+                            </div>
+                        </a>
+                    </figure>
+                </article>
+            </article>
         </section>
 
     </main>
 
     <footer id="Contact-me" alt="Contact me" class="section">
-        <h2 class="header">Contact Me</h2>
+        <div class="header-container">
+            <h2>Contact Me</h2>
+        </div>
         <ul class="contactlist">
             <li>
-                443-765-2885
+                <a href="tel:443-765-2885">443-765-2885</a>
             </li>
             <li>
                 <a href="mailto:Mary.C.McClernan@gmail.com" target="_blank">Mary.C.McClernan@gmail.com</a>
@@ -72,4 +101,5 @@
     </footer>
 
 </body>
+
 </html>
