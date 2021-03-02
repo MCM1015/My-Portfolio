@@ -8,6 +8,7 @@ All you need to view my portfolio is internet access and a web browser!
 Follow this link (https://mcm1015.github.io/My-Portfolio/)
 Website Preview: 
 ![ME](./assets/images/Snapshot.jpg)
+
 If you want to view the working code follow this link [HTML CODE](index.html) and this link [CSS CODE](./assets/css/style.css)
 
 # Credits

@@ -15,12 +15,10 @@
    --tenpx: 10px;
    --font30px: 30px;
    --figure-border: 2px ridge lightblue;
-
 }
 
 /* || General Styles */
 /* body*/
-
 body {
     background-color: var(--white);
     color: var(--body);
@@ -29,15 +27,13 @@ body {
     flex-direction: column;
 }
 
-header {
-    background-color: var(--black);
-    font-size: var(--font30px);
-    font-weight: bold;
-    color: var(--head-subhead);
-    padding: var(--fivepx);
-    height: 75px;
+/* main content*/
+main {
+    font-weight: lighter;
+    font-size: 18px;
 }
 
+/* headings*/
 h1 {
     font-size: 60px;
 }
@@ -49,6 +45,23 @@ h2 {
     width: 225px;
 }
 
+/* list*/
+ul {
+    list-style-type: none;
+}
+
+/* || Header Section Styles */
+/* header*/
+header {
+    background-color: var(--black);
+    font-size: var(--font30px);
+    font-weight: bold;
+    color: var(--head-subhead);
+    padding: var(--fivepx);
+    height: 75px;
+}
+
+/* header nav*/
 header li a {
     color: var(--head-subhead-font);
     display: inline;
@@ -59,10 +72,7 @@ header li a {
     margin: var(--tenpx);
 }
 
-ul {
-    list-style-type: none;
-}
-
+/* subheader*/
 .subheader { 
     background-image: url("../images/blue-marble-paint-background.jpg");
     background-size: cover;
@@ -72,73 +82,53 @@ ul {
     flex-direction: row;
     justify-content: space-between;
 }
+
+/* subheader image*/
 .subheader img {
     width: 200px;
     height: 250px;
     border: 1px dashed var(--white);
-    margin: 5px;
+    margin: var(--fivepx);
 }
 
+/* subheader subtitle*/
 .subheader p {
-    font-size: 30px;
-    color: black;
+    font-size: var(--font30px);
+    color: var(--black);
     margin-top: 225px;
     padding-right: var(--fivepx);
 }
 
-main {
-    font-weight: lighter;
-    font-size: 18px;
-}
-
+/* || Section Styles */
+/* sections*/
 .section {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    margin: 5px;
-    padding: 5px;
+    margin: var(--fivepx);
+    padding: var(--fivepx);
 }
 
+/* sections headers */
 .header-container {
     border-right: 5px solid darkslateblue;
-    margin-left:10px; 
-    background-color: white;
+    margin-left: var(--tenpx); 
+    background-color: var(--white);
 }
 
-section article p {
+/* Section 1 About me text */
+.me p {
     margin: var(--tenpx);
     text-align: justify;
 }
 
+/* Section 2 container */
 .project {
     margin: var(--tenpx);
 }
 
-.fanpage-image { 
-    border: var(--figure-border);
-    width: 100%;
-    height: 100%;
-}
-.fanpage {
-    display: flex;
-    justify-content: right;
-}
-
-.two {
-    display: flex;
-    justify-content: right;
-}
-
-.scratch {
-    width:50%;
-}
-.scratch-image {
-    border: var(--figure-border);
-    width: 100%;
-    height: 100%;
-}
-
-.image {
+/* Section 2 titles*/
+.title {
     position: relative;
     border: 1px solid var(--white);
     background-image: url(../images/blue-marble-paint-background.jpg);
@@ -150,32 +140,56 @@ section article p {
     color: var(--black);
     font-weight: bolder;
     text-align: start;
-
 }
 
-.blank {
-    width: 50%;
+/* Section 2 subsection 1 container */
+.fanpage {
+    display: flex;
+    justify-content: right;
 }
-
-.blank-image {
+/* Section 2 subsection 1 image */
+.fanpage-image { 
     border: var(--figure-border);
     width: 100%;
-    height:100% 
+    height: 100%;
 }
+
+/* Section 2 subsection 2 container */
+.two {
+    display: flex;
+    justify-content: right;
+}
+
+/* Section 2 subsection 2 content */
+.secondary {
+    width:50%;
+}
+
+/* Section 2 subsection 2 image */
+.secondary-image {
+    border: var(--figure-border);
+    width: 100%;
+    height: 100%;
+}
+
+/* footer nav*/
 .contactlist {
     display: flex;
 }
 
+/* footer nav list*/
 footer ul li {
     padding: var(--tenpx);
     font-size: 20px;
 }
-  
+
+/* link hover effects*/
 a:hover {
     color: palevioletred;
     opacity: 50%;
   }
 
+/* responsive design*/
 @media screen and (min-width: 768px) {
     .section {
       flex: 0 0 85%;
