@@ -31,4 +31,3 @@ The [MIT](LICENSE) license was chosen for this project.
 
 Email: Mary.C.McClernan@gmail.com
 
-
