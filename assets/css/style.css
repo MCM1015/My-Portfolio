@@ -143,12 +143,12 @@ header li a {
 }
 
 /* Section 2 subsection 1 container */
-.fanpage {
+.marvel {
     display: flex;
     justify-content: right;
 }
 /* Section 2 subsection 1 image */
-.fanpage-image { 
+.project1-image { 
     border: var(--figure-border);
     width: 100%;
     height: 100%;
