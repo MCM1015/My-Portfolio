@@ -3,102 +3,128 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>My Portfolio</title>
 </head>
 
 <body>
     <header>
-        <h1>Mary McClernan</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#Work">Work</a>
-                </li>
-                <li>
-                    <a href="#Contact-me">Contact me</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="subheader">
-            <img src="assets/images/Selfie.jpeg" alt="Picture of me" class=Selfie></img>
-            <p>"Know better, do better" - Maya Angelou</p>
-        </section>
-
-        <section id="about-me" alt="about me" class="section">
-            <div class="header-container">
-                <h2>About Me</h2>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-full">
+            <div class="container-fluid">
+                <h1 class="navbar-brand">Mary McClernan</h1>
+                <div class="collapse navbar-collapse  d-flex flex-sm-row flex-lg-row-reverse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-me">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact-me">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <article class="me">
+        </nav>
+        <section class="subheader">
+            <img src="assets/images/Selfie.jpeg" alt="Picture of me" class="selfie d-flex justify-content-center"></img>
+            <p class="d-flex flex-sm-row flex-lg-row-reverse">"Know better, do better" - Maya Angelou</p>
+        </section>
+    </header>
+
+    <main>
+
+        <section id="about-me" alt="about me" class="main-section d-flex flex-row justify-content-start px-1 mx-1">
+            <div class="header-container">
+                <h2 class="fs-3 fw-bold px-1 mx-1">About Me</h2>
+            </div>
+            <div class="me">
                 <p>Born and stayed in Maryland. I am currently training to become a full stack develop through a
                     bootcamp provided by Johns Hopkins University.
                     My hope is to become proficient in both front and back end web development. Some examples of my work
                     thus far can be seen below.
                     My work not only highlights who I am as a person but more importantly who I am as a developer.
                 </p>
-            </article>
+            </div>
         </section>
 
-        <section id="Work" alt="Work" class="section">
+        <section id="work" alt="work" class="main-section d-flex flex-row justify-content-start px-1 mx-1">
             <div class="header-container">
-                <h2>Work</h2>
+                <h2 class="fs-3 fw-bold px-1 mx-1">Work</h2>
             </div>
-            <article class="project">
-                <figure class="marvel">
-                    <a href="https://mcm1015.github.io/PR1_Marvel/" target="_blank">
-                        <img class="project1-image" src="./assets/images/Marvel_Website_Preview.png">
-                        <div class="title">
-                            <p>Marvel Character Search</p>
+            <div class="container">
+                <div class="card row w-600 bg-dark text-white">
+                    <img src="./assets/images/Marvel_Website_Preview.png" href="https://github.com/MCM1015/PR1_Marvel" target="_blank" class="card-img-primary"
+                        alt="Marvel Website Preview">
+                    <div class="card-img-overlay">
+                        <button class="btn btn-dark" href="https://mcm1015.github.io/PR1_Marvel/"
+                            target="_blank">Website
+                            Preview</button>
+                        <button class="btn btn-dark" href="https://github.com/MCM1015/PR1_Marvel" target="_blank">GitHub
+                            Repository</button>
+                    </div>
+                </div>
+                <div class="row w-600">
+                    <div class="cardb col bg-dark text-white">
+                        <img src="./assets/images/Weather_Website_Preview.png" class="card-img-secondary" alt="Weather">
+                        <div class="card-img-overlay">
+                            <button class="btn btn-dark" href="https://mcm1015.github.io/TheWeatherOutsideIsWeather/"
+                                target="_blank">Website
+                                Preview</button>
+                            <button class="btn btn-dark" href="https://github.com/MCM1015/TheWeatherOutsideIsWeather"
+                                target="_blank">GitHub
+                                Repository</button>
                         </div>
-                    </a>
-                </figure>
-                <article class="two">
-                    <figure class="secondary">
-                        <a href="https://mcm1015.github.io/TheWeatherOutsideIsWeather/" target="_blank">
-                            <img class="secondary-image" src="./assets/images/Weather_Website_Preview.png" alt="Weather">
-                            <div class="title">
-                                <p>The weather outside is weather</p>
-                            </div>
-                        </a>
-                    </figure>
-                    <figure class="secondary">
-                        <a href="https://mcm1015.github.io/WorkDayScheduler/" target="_blank">
-                            <img class="secondary-image" src="./assets/images/WorkDay_Website_Preview.png" alt="Work Day Scheduler">
-                            <div class="title">
-                                <p>Work Day Scheduler</p>
-                            </div>
-                        </a>
-                    </figure>
-                </article>
-            </article>
+                    </div>
+                    <div class="cardc col bg-dark text-white">
+                        <img src="./assets/images/WorkDay_Website_Preview.png" class="card-img-secondary"
+                            alt="Work Day Scheduler">
+                        <div class="card-img-overlay">
+                            <button class="btn btn-dark" href="https://mcm1015.github.io/WorkDayScheduler/"
+                                target="_blank">Website
+                                Preview</button>
+                            <button class="btn btn-dark" href="https://github.com/MCM1015/WorkDayScheduler"
+                                target="_blank">GitHub
+                                Repository</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
 
-    <footer id="Contact-me" alt="Contact me" class="section">
-        <div class="header-container">
-            <h2>Contact Me</h2>
-        </div>
-        <ul class="contactlist">
-            <li>
-                <a href="tel:443-765-2885">443-765-2885</a>
-            </li>
-            <li>
-                <a href="mailto:Mary.C.McClernan@gmail.com" target="_blank">Mary.C.McClernan@gmail.com</a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/mary-mcclernan1015" target="_blank">Linkedin</a>
-            </li>
-            <li>
-                <a href="https://github.com/MCM1015/" target="_blank">GitHub</a>
-            </li>
-        </ul>
+    <footer id="Contact-me" alt="Contact me">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-full">
+            <div class="container-fluid">
+                <h1 class="navbar-brand">Contact Me</h1>
+                <div class="collapse navbar-collapse  d-flex flex-sm-row flex-lg-row-reverse" id="navbarNav">
+                    <ul class="navbar-nav contactlist">
+                        <li class="nav-item">
+                            <a class="nav-link" href="tel:443-765-2885">443-765-2885</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:Mary.C.McClernan@gmail.com"
+                                target="_blank">Mary.C.McClernan@gmail.com</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/mary-mcclernan1015"
+                                target="_blank">Linkedin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/MCM1015/" target="_blank">GitHub</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="https://drive.google.com/file/d/1qtSBfZcXAWgYtM6XyF9Sv5u8cudcIrYg/view?usp=sharing"
+                                target="_blank">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </footer>
 
 </body>
