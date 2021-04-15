@@ -7,8 +7,7 @@ The purpose of this project was to create a portfolio which provides a brief int
 All you need to view my portfolio is internet access and a web browser!
 Follow this link (https://mcm1015.github.io/My-Portfolio/)
 Website Preview: 
-![ME](./assets/images/snapshot1.png)
-![ME](./assets/images/snapshot2.png)
+![ME](./assets/images/Website_Preview.png)
 
 If you want to view the working code follow this link [HTML CODE](index.html) and this link [CSS CODE](./assets/css/style.css)
 
@@ -25,6 +24,8 @@ css text decoration(https://www.w3schools.com/cssref/pr_text_text-decoration.asp
 
 flexbox(https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
+bootstrap (https://getbootstrap.com/docs/5.0/getting-started/introduction/
+)
 # License
 The [MIT](LICENSE) license was chosen for this project. 
 
